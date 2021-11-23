@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW_ContainerViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e9e-aZ-gOk">
+                                <rect key="frame" x="0.0" y="96" width="414" height="766"/>
+                                <connections>
+                                    <segue destination="6rj-wF-och" kind="embed" id="zoQ-OR-bIZ"/>
+                                </connections>
+                            </containerView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lsl-d8-YBT">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Tourist City" id="C2s-ni-853"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lsl-d8-YBT" firstAttribute="leading" secondItem="e9e-aZ-gOk" secondAttribute="leading" id="0NB-IQ-HlU"/>
+                            <constraint firstItem="e9e-aZ-gOk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Oi-Pb-cqL"/>
+                            <constraint firstItem="e9e-aZ-gOk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="I5T-k7-tL3"/>
+                            <constraint firstItem="lsl-d8-YBT" firstAttribute="trailing" secondItem="e9e-aZ-gOk" secondAttribute="trailing" id="P3R-z3-J19"/>
+                            <constraint firstItem="e9e-aZ-gOk" firstAttribute="top" secondItem="lsl-d8-YBT" secondAttribute="bottom" constant="8" id="SFO-y3-kgE"/>
+                            <constraint firstItem="lsl-d8-YBT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YgN-OE-kXc"/>
+                            <constraint firstItem="e9e-aZ-gOk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="sxD-ta-TN6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="69.642857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ex2-xN-zYD">
+            <objects>
+                <viewController id="6rj-wF-och" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Nu-DN-8Qe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="766"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="khobarimag" translatesAutoresizingMaskIntoConstraints="NO" id="eTE-u6-kde">
+                                <rect key="frame" x="20" y="160" width="374" height="173"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Khobar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqJ-Q8-bfW">
+                                <rect key="frame" x="20" y="83" width="94" height="35"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gg-W0-cBl">
+                                <rect key="frame" x="27" y="354" width="360" height="168"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Al-Khobar is a Saudi Arabian city on the Arabian Gulf. Its Corniche, a large waterfront area, includes Prince Faisal bin Fahad Sea Park, with cafes and playgrounds. Nearby, the city’s island Water Tower offers panoramic views. The Sultan Bin Abdulaziz Science &amp; Technology Center (SciTech) has an aquarium, interactive displays and an IMAX theater. West, the Aramco Exhibit is a museum exploring the Saudi oil industry.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWR-95-5Ug">
+                                <rect key="frame" x="147" y="550" width="121" height="41"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Learn more"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="XqJ-Q8-bfW" secondAttribute="trailing" constant="280" id="1Ob-i6-1zq"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="0gg-W0-cBl" secondAttribute="bottom" constant="244" id="2hS-TL-mfU"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="eTE-u6-kde" secondAttribute="bottom" constant="433" id="3ai-vN-cmA"/>
+                            <constraint firstItem="eTE-u6-kde" firstAttribute="top" secondItem="8Nu-DN-8Qe" secondAttribute="topMargin" constant="116" id="5F2-d0-0bF"/>
+                            <constraint firstItem="XqJ-Q8-bfW" firstAttribute="top" secondItem="8Nu-DN-8Qe" secondAttribute="topMargin" constant="39" id="IDb-Oc-ay3"/>
+                            <constraint firstItem="eTE-u6-kde" firstAttribute="trailing" secondItem="8Nu-DN-8Qe" secondAttribute="trailingMargin" id="K1f-Hw-fWy"/>
+                            <constraint firstItem="XqJ-Q8-bfW" firstAttribute="leading" secondItem="8Nu-DN-8Qe" secondAttribute="leadingMargin" id="LXK-GC-TcK"/>
+                            <constraint firstItem="iWR-95-5Ug" firstAttribute="leading" secondItem="8Nu-DN-8Qe" secondAttribute="leadingMargin" constant="127" id="ccl-gF-giT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0gg-W0-cBl" secondAttribute="trailing" constant="7" id="dFR-va-Xyu"/>
+                            <constraint firstItem="eTE-u6-kde" firstAttribute="top" secondItem="XqJ-Q8-bfW" secondAttribute="bottom" constant="42" id="e85-4U-zHl"/>
+                            <constraint firstItem="0gg-W0-cBl" firstAttribute="leading" secondItem="8Nu-DN-8Qe" secondAttribute="leadingMargin" constant="7" id="efk-YC-jhT"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="iWR-95-5Ug" secondAttribute="bottom" constant="175" id="f76-om-Spc"/>
+                            <constraint firstItem="0gg-W0-cBl" firstAttribute="top" secondItem="eTE-u6-kde" secondAttribute="bottom" constant="21" id="jwA-nz-cjB"/>
+                            <constraint firstItem="eTE-u6-kde" firstAttribute="leading" secondItem="8Nu-DN-8Qe" secondAttribute="leadingMargin" id="kvB-wH-U20"/>
+                            <constraint firstItem="iWR-95-5Ug" firstAttribute="top" secondItem="0gg-W0-cBl" secondAttribute="bottom" constant="28" id="mdd-Gp-BR8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iWR-95-5Ug" secondAttribute="trailing" constant="126" id="r41-QU-cst"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0rT-yP-wus" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1723.1884057971015" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="khobarimag" width="670" height="395"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
