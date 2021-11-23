@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="H_W_Dammam_city" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6r-4m-VOP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <connections>
+                                    <segue destination="6go-BC-GkK" kind="embed" id="6k4-ls-FOY"/>
+                                </connections>
+                            </containerView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qbO-El-x6U">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Beautiful Cities" id="FOC-sL-UUa"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u6r-4m-VOP" secondAttribute="bottom" id="7TC-1x-tBV"/>
+                            <constraint firstItem="u6r-4m-VOP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RiU-0r-Srg"/>
+                            <constraint firstItem="u6r-4m-VOP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cgj-b9-cvh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u6r-4m-VOP" secondAttribute="trailing" id="xoC-Il-eI3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-168" y="-62"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yLZ-iF-6dr">
+            <objects>
+                <viewController id="6go-BC-GkK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hyA-17-gpM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unknown" translatesAutoresizingMaskIntoConstraints="NO" id="ieh-Vc-WT3">
+                                <rect key="frame" x="10" y="179" width="384" height="243"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="243" id="57b-6R-VNr"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="sQW-lJ-1Iq">
+                                <rect key="frame" x="20" y="463" width="374" height="164"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="o0X-zR-RaF"/>
+                                </constraints>
+                                <string key="text">A Saudi city located on the coast of the Arabian Gulf, the capital of the Eastern Province, its administrative center and its most important city; It is the main port in the region due to the importance of its location on three sides of the Arabian Gulf, from the north, east and south...</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9U-Pa-56Z">
+                                <rect key="frame" x="139" y="686" width="98" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Learn More"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dammmam Cities :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szD-zY-6X9">
+                                <rect key="frame" x="20" y="134" width="251.5" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="C9U-Pa-56Z" firstAttribute="leading" secondItem="hyA-17-gpM" secondAttribute="leading" constant="139" id="H8L-vF-TjT"/>
+                            <constraint firstItem="sQW-lJ-1Iq" firstAttribute="leading" secondItem="hyA-17-gpM" secondAttribute="leadingMargin" id="Jof-3a-OSM"/>
+                            <constraint firstItem="C9U-Pa-56Z" firstAttribute="top" secondItem="sQW-lJ-1Iq" secondAttribute="bottom" constant="59" id="VpD-ih-O1x"/>
+                            <constraint firstItem="ieh-Vc-WT3" firstAttribute="leading" secondItem="hyA-17-gpM" secondAttribute="leadingMargin" constant="-10" id="ZAg-ik-mmK"/>
+                            <constraint firstItem="ieh-Vc-WT3" firstAttribute="top" secondItem="szD-zY-6X9" secondAttribute="bottom" constant="8" id="ZVb-Kh-ZjZ"/>
+                            <constraint firstItem="ieh-Vc-WT3" firstAttribute="trailing" secondItem="sQW-lJ-1Iq" secondAttribute="trailing" id="pDf-K3-TtU"/>
+                            <constraint firstItem="szD-zY-6X9" firstAttribute="leading" secondItem="hyA-17-gpM" secondAttribute="leadingMargin" id="vkT-60-eBu"/>
+                            <constraint firstItem="ieh-Vc-WT3" firstAttribute="trailing" secondItem="hyA-17-gpM" secondAttribute="trailingMargin" id="vt0-DR-Arg"/>
+                            <constraint firstItem="szD-zY-6X9" firstAttribute="top" secondItem="hyA-17-gpM" secondAttribute="topMargin" constant="90" id="wV7-jK-4c4"/>
+                            <constraint firstItem="sQW-lJ-1Iq" firstAttribute="top" secondItem="ieh-Vc-WT3" secondAttribute="bottom" constant="41" id="yYI-st-pzz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fRx-cz-o38" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="558" y="-35"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Unknown" width="326" height="155"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
