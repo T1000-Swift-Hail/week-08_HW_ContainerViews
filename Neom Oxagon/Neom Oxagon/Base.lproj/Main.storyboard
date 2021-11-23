@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Neom_Oxagon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xm-I4-D5S">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Future Cities" id="uKY-U8-zGg"/>
+                                </items>
+                            </navigationBar>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8g-L8-2zB">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <connections>
+                                    <segue destination="xv6-5k-b4f" kind="embed" id="FYe-Rh-u9S"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g8g-L8-2zB" firstAttribute="top" secondItem="5xm-I4-D5S" secondAttribute="bottom" id="4Jg-iX-p6p"/>
+                            <constraint firstItem="5xm-I4-D5S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BqS-yg-xlX"/>
+                            <constraint firstItem="5xm-I4-D5S" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LI9-2o-6vR"/>
+                            <constraint firstItem="g8g-L8-2zB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hcc-Rb-YD5"/>
+                            <constraint firstItem="g8g-L8-2zB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="mc8-2Y-g6d"/>
+                            <constraint firstItem="5xm-I4-D5S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="svN-vL-qkU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g8g-L8-2zB" secondAttribute="trailing" id="vK3-wH-nFE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="82.366071428571431"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rQY-U4-NBK">
+            <objects>
+                <viewController id="xv6-5k-b4f" customClass="ViewController" customModule="Neom_Oxagon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PAd-Jx-RsU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neom Oxagon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7h-0G-cWp">
+                                <rect key="frame" x="20" y="75" width="192" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neom2" translatesAutoresizingMaskIntoConstraints="NO" id="dgG-hx-Qfw">
+                                <rect key="frame" x="20" y="126" width="374" height="183"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="183" id="ir0-n7-oXg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiw-5g-34g">
+                                <rect key="frame" x="20" y="321" width="374" height="101.5"/>
+                                <string key="text">OXAGON complements the same philosophy and principles of THE LINE, which was announced in January, and will offer exceptional livability in harmony with nature, according to a statement carried by Saudi Press Agency..</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Dr-K7-dNF">
+                                <rect key="frame" x="100" y="450" width="214" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Learn More">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.95152562856674194" green="0.79848986864089966" blue="0.83324348926544189" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="dgG-hx-Qfw" secondAttribute="trailing" id="8Bo-1H-RH3"/>
+                            <constraint firstItem="5Dr-K7-dNF" firstAttribute="leading" secondItem="PAd-Jx-RsU" secondAttribute="leadingMargin" constant="80" id="GdS-hA-WCd"/>
+                            <constraint firstItem="k7h-0G-cWp" firstAttribute="leading" secondItem="PAd-Jx-RsU" secondAttribute="leadingMargin" id="YTD-b4-N5Z"/>
+                            <constraint firstItem="qiw-5g-34g" firstAttribute="trailing" secondItem="PAd-Jx-RsU" secondAttribute="trailingMargin" id="dI4-Rg-Piv"/>
+                            <constraint firstItem="qiw-5g-34g" firstAttribute="top" secondItem="dgG-hx-Qfw" secondAttribute="bottom" constant="12" id="ha3-bs-Zix"/>
+                            <constraint firstItem="qiw-5g-34g" firstAttribute="leading" secondItem="PAd-Jx-RsU" secondAttribute="leadingMargin" id="mfI-4f-1sd"/>
+                            <constraint firstItem="k7h-0G-cWp" firstAttribute="top" secondItem="PAd-Jx-RsU" secondAttribute="topMargin" constant="31" id="nIy-0U-1C1"/>
+                            <constraint firstItem="dgG-hx-Qfw" firstAttribute="leading" secondItem="PAd-Jx-RsU" secondAttribute="leadingMargin" id="nt4-KS-rZR"/>
+                            <constraint firstItem="5Dr-K7-dNF" firstAttribute="top" secondItem="qiw-5g-34g" secondAttribute="bottom" constant="27.5" id="px4-KC-XZE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Dr-K7-dNF" secondAttribute="trailing" constant="80" id="taC-1m-cbo"/>
+                            <constraint firstItem="dgG-hx-Qfw" firstAttribute="top" secondItem="k7h-0G-cWp" secondAttribute="bottom" constant="14" id="x8S-bi-XJm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgNeomOxagon" destination="dgG-hx-Qfw" id="jVy-kE-Yrb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tDO-40-Xrl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915.94202898550736" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="neom2" width="1920" height="1152"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
