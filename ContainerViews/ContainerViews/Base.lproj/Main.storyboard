@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ContainerViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CQ9-qj-b5O">
+                                <rect key="frame" x="0.0" y="74" width="414" height="788"/>
+                                <connections>
+                                    <segue destination="ZT5-rX-IcR" kind="embed" id="apJ-73-Oq7"/>
+                                </connections>
+                            </containerView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yQQ-CR-DST">
+                                <rect key="frame" x="0.0" y="30" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="capital of KSA" id="gpP-Ob-Kea"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CQ9-qj-b5O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KrZ-di-0O8"/>
+                            <constraint firstItem="CQ9-qj-b5O" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Wcc-xl-gpg"/>
+                            <constraint firstItem="CQ9-qj-b5O" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="s3x-55-TGE"/>
+                            <constraint firstItem="CQ9-qj-b5O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="unJ-po-81A"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="80.357142857142847"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IvG-xs-QSi">
+            <objects>
+                <viewController id="ZT5-rX-IcR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UXu-mF-3Te">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="788"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3I-qi-G4P">
+                                <rect key="frame" x="20" y="484" width="374" height="101.5"/>
+                                <string key="text">Riyadh is the capital of Saudi Arabia, and its largest and third largest Arab capitals in terms of population. Riyadh is located in the middle of the Arabian Peninsula in the Plateau of Najd, at a height of 600 meters above sea level. It is the ...</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Riyadh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9n-vU-iQ3">
+                                <rect key="frame" x="20" y="97" width="374" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPO-LR-qr3">
+                                <rect key="frame" x="120" y="637.5" width="174" height="48.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48.5" id="o9F-v8-kZh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Learn More">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="sc" translatesAutoresizingMaskIntoConstraints="NO" id="lXb-5y-F9q">
+                                <rect key="frame" x="20" y="148" width="374" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="IL3-6U-pUL"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G9n-vU-iQ3" firstAttribute="leading" secondItem="UXu-mF-3Te" secondAttribute="leadingMargin" id="3xI-Zv-b1a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SPO-LR-qr3" secondAttribute="trailing" constant="100" id="GcC-6J-anC"/>
+                            <constraint firstItem="lXb-5y-F9q" firstAttribute="top" secondItem="UXu-mF-3Te" secondAttribute="topMargin" constant="104" id="Gyl-qp-dFC"/>
+                            <constraint firstItem="SPO-LR-qr3" firstAttribute="top" secondItem="p3I-qi-G4P" secondAttribute="bottom" constant="52" id="KhK-zt-1zs"/>
+                            <constraint firstItem="G9n-vU-iQ3" firstAttribute="top" secondItem="UXu-mF-3Te" secondAttribute="topMargin" constant="53" id="M3L-hL-rRN"/>
+                            <constraint firstItem="SPO-LR-qr3" firstAttribute="leading" secondItem="UXu-mF-3Te" secondAttribute="leadingMargin" constant="100" id="OoF-4t-XK2"/>
+                            <constraint firstItem="p3I-qi-G4P" firstAttribute="leading" secondItem="UXu-mF-3Te" secondAttribute="leadingMargin" id="TNZ-jb-KBg"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="lXb-5y-F9q" secondAttribute="bottom" constant="360" id="VHH-fR-AEf"/>
+                            <constraint firstItem="p3I-qi-G4P" firstAttribute="trailing" secondItem="UXu-mF-3Te" secondAttribute="trailingMargin" id="cPk-Dc-h2H"/>
+                            <constraint firstItem="lXb-5y-F9q" firstAttribute="leading" secondItem="UXu-mF-3Te" secondAttribute="leadingMargin" id="rCB-dC-JT8"/>
+                            <constraint firstItem="G9n-vU-iQ3" firstAttribute="trailing" secondItem="UXu-mF-3Te" secondAttribute="trailingMargin" id="t5X-DP-cgo"/>
+                            <constraint firstItem="lXb-5y-F9q" firstAttribute="trailing" secondItem="UXu-mF-3Te" secondAttribute="trailingMargin" id="yU3-Ml-eXb"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="SPO-LR-qr3" secondAttribute="bottom" constant="102" id="ytC-1X-h3E"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tN5-G2-EbY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798.55072463768124" y="80.357142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sc" width="2048" height="1366"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
