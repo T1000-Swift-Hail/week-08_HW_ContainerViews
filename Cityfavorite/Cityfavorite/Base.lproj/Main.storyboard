@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="24E-5R-cpe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="bjs-XK-Ig1">
+            <objects>
+                <viewController id="24E-5R-cpe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D8t-iy-xCP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mB1-Qb-vha">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <connections>
+                                    <segue destination="JfH-Bw-GZL" kind="embed" id="CjT-zA-iZO"/>
+                                </connections>
+                            </containerView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dvc-wx-nyg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="New York" id="pDJ-Qk-bfk"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="p7u-a3-yIS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mB1-Qb-vha" firstAttribute="top" secondItem="p7u-a3-yIS" secondAttribute="top" id="IDQ-Re-g4e"/>
+                            <constraint firstItem="mB1-Qb-vha" firstAttribute="leading" secondItem="p7u-a3-yIS" secondAttribute="leading" id="JNz-Sw-XzZ"/>
+                            <constraint firstItem="p7u-a3-yIS" firstAttribute="trailing" secondItem="mB1-Qb-vha" secondAttribute="trailing" id="aJY-ov-8S6"/>
+                            <constraint firstItem="p7u-a3-yIS" firstAttribute="bottom" secondItem="mB1-Qb-vha" secondAttribute="bottom" id="cGA-LX-J6R"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qLe-2e-LVh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQx-Uu-n0C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1701" y="44"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="lMS-Ov-4a1">
+            <objects>
+                <viewController id="JfH-Bw-GZL" customClass="SecondVC" customModule="Cityfavorite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t4K-PI-HXe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UrK-qi-bmI">
+                                <rect key="frame" x="20" y="44" width="134.5" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FgE-ZO-n9a">
+                                <rect key="frame" x="20" y="105" width="374" height="241"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="241" id="Txm-Ln-os7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuL-wc-0i1">
+                                <rect key="frame" x="20" y="376" width="374" height="155"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="SnL-TD-u2L"/>
+                                </constraints>
+                                <string key="text">New York, often called New York City to distinguish it from New York State, or NYC for short, is the most populous city in the United States. With a 2020 population of 8,804,190 distributed over 300.46 square miles (778.2 km2), New York City is also the most densely populated major city in the United States</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVe-it-rBS">
+                                <rect key="frame" x="104" y="597" width="206" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Learn more"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VQu-s1-0Hj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FgE-ZO-n9a" firstAttribute="top" secondItem="UrK-qi-bmI" secondAttribute="bottom" constant="22.5" id="9EW-D4-Hln"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SVe-it-rBS" secondAttribute="trailing" constant="84" id="CYk-RB-0nb"/>
+                            <constraint firstItem="NuL-wc-0i1" firstAttribute="top" secondItem="FgE-ZO-n9a" secondAttribute="bottom" constant="30" id="GFo-Th-zwc"/>
+                            <constraint firstItem="FgE-ZO-n9a" firstAttribute="leading" secondItem="t4K-PI-HXe" secondAttribute="leadingMargin" id="Yn9-MB-z0j"/>
+                            <constraint firstItem="NuL-wc-0i1" firstAttribute="trailing" secondItem="t4K-PI-HXe" secondAttribute="trailingMargin" id="Z5a-xC-00s"/>
+                            <constraint firstItem="UrK-qi-bmI" firstAttribute="leading" secondItem="t4K-PI-HXe" secondAttribute="leadingMargin" id="ZXP-Yi-PtR"/>
+                            <constraint firstItem="SVe-it-rBS" firstAttribute="top" secondItem="NuL-wc-0i1" secondAttribute="bottom" constant="66" id="c2V-DS-TqF"/>
+                            <constraint firstItem="NuL-wc-0i1" firstAttribute="leading" secondItem="t4K-PI-HXe" secondAttribute="leadingMargin" id="fu1-zI-3Rx"/>
+                            <constraint firstItem="FgE-ZO-n9a" firstAttribute="trailing" secondItem="t4K-PI-HXe" secondAttribute="trailingMargin" id="kDW-hX-kNX"/>
+                            <constraint firstItem="UrK-qi-bmI" firstAttribute="top" secondItem="t4K-PI-HXe" secondAttribute="topMargin" id="qKu-Sr-qro"/>
+                            <constraint firstItem="SVe-it-rBS" firstAttribute="leading" secondItem="t4K-PI-HXe" secondAttribute="leadingMargin" constant="84" id="sfU-hH-9AJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityImage" destination="FgE-ZO-n9a" id="qNc-2W-zwu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b5Z-Ea-Ia4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2553.6231884057975" y="43.526785714285715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
