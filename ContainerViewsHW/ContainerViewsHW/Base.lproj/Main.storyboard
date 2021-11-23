@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ContainerViewsHW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bzG-Xs-dOo">
+                                <rect key="frame" x="0.0" y="55" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Future Cities" id="CP8-vy-jYQ"/>
+                                </items>
+                            </navigationBar>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pU1-3K-tw5">
+                                <rect key="frame" x="0.0" y="99" width="414" height="777"/>
+                                <connections>
+                                    <segue destination="PHl-LB-3Jy" kind="embed" id="2Wk-If-dMI"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="pU1-3K-tw5" secondAttribute="bottom" constant="20" id="4Cg-ia-OXz"/>
+                            <constraint firstItem="bzG-Xs-dOo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="11" id="AhV-xu-hjO"/>
+                            <constraint firstItem="bzG-Xs-dOo" firstAttribute="trailing" secondItem="pU1-3K-tw5" secondAttribute="trailing" id="BQa-pW-yhK"/>
+                            <constraint firstItem="pU1-3K-tw5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="epZ-Ip-Lx3"/>
+                            <constraint firstItem="bzG-Xs-dOo" firstAttribute="leading" secondItem="pU1-3K-tw5" secondAttribute="leading" id="kbD-J3-yzl"/>
+                            <constraint firstItem="pU1-3K-tw5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ogh-hu-MdQ"/>
+                            <constraint firstItem="pU1-3K-tw5" firstAttribute="top" secondItem="bzG-Xs-dOo" secondAttribute="bottom" id="vph-eP-S4A"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="71.651785714285708"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Mol-tX-FHm">
+            <objects>
+                <viewController id="PHl-LB-3Jy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="qiC-pG-upU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="777"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TUWAIQ MOUNTAIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBG-Ig-vgy">
+                                <rect key="frame" x="30" y="50" width="283" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="yut-HR-spm">
+                                <rect key="frame" x="30" y="113" width="366" height="463"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="0V1-wi-R4W">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="260"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="260" id="jJI-Xk-ci2"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8Z-zB-gyA">
+                                        <rect key="frame" x="0.0" y="290" width="366" height="173"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="173" id="g0p-bg-QTu"/>
+                                        </constraints>
+                                        <string key="text">Tuwaiq mountain where the edge of world lies is made of limestone and mud, it is very rich in fossils that indicate its’ ancient history, as well as coral reefs, shells, ammonites, and other living organisms, all of which were deposited more than a 160 million years ago, to turn later into one of the largest oil sources in the eastern region.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="366" id="JGs-pE-UEg"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OiR-K8-woX">
+                                <rect key="frame" x="154" y="622" width="97.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Learn More"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OiR-K8-woX" firstAttribute="top" secondItem="yut-HR-spm" secondAttribute="bottom" constant="46" id="5fO-Ve-e8Z"/>
+                            <constraint firstItem="OiR-K8-woX" firstAttribute="leading" secondItem="qiC-pG-upU" secondAttribute="leadingMargin" constant="134" id="A0e-tt-0bu"/>
+                            <constraint firstItem="yut-HR-spm" firstAttribute="leading" secondItem="qiC-pG-upU" secondAttribute="leading" constant="30" id="MYi-ic-7tP"/>
+                            <constraint firstItem="EBG-Ig-vgy" firstAttribute="top" secondItem="qiC-pG-upU" secondAttribute="top" constant="50" id="Reu-EW-8fu"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="OiR-K8-woX" secondAttribute="trailing" id="Xad-OY-h3L"/>
+                            <constraint firstItem="EBG-Ig-vgy" firstAttribute="leading" secondItem="qiC-pG-upU" secondAttribute="leading" constant="30" id="a5R-Uc-4Qj"/>
+                            <constraint firstAttribute="trailing" secondItem="yut-HR-spm" secondAttribute="trailing" constant="30" id="ehG-GY-a2G"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EBG-Ig-vgy" secondAttribute="trailing" id="hCI-Ea-UEE"/>
+                            <constraint firstItem="yut-HR-spm" firstAttribute="top" secondItem="EBG-Ig-vgy" secondAttribute="bottom" constant="26" id="wJj-x1-pus"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pWf-qo-IE6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976.81159420289862" y="71.986607142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backgroundImage" width="1440" height="900"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
