@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW_ContainerViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bYS-Rb-V05">
+                                <rect key="frame" x="0.0" y="97" width="414" height="765"/>
+                                <connections>
+                                    <segue destination="6Hq-3U-KYt" kind="embed" id="GKz-xs-189"/>
+                                </connections>
+                            </containerView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jWe-cu-Rs3">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Olde Cities " id="79O-R8-M8o"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bYS-Rb-V05" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0ib-Al-vMi"/>
+                            <constraint firstItem="bYS-Rb-V05" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="1J7-B4-Lgc"/>
+                            <constraint firstItem="jWe-cu-Rs3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BF1-lT-mfQ"/>
+                            <constraint firstItem="bYS-Rb-V05" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GQl-cP-Ty7"/>
+                            <constraint firstItem="bYS-Rb-V05" firstAttribute="top" secondItem="jWe-cu-Rs3" secondAttribute="bottom" constant="9" id="qne-Uw-87X"/>
+                            <constraint firstItem="bYS-Rb-V05" firstAttribute="top" secondItem="jWe-cu-Rs3" secondAttribute="bottom" constant="9" id="t1z-dt-DDW"/>
+                            <constraint firstItem="jWe-cu-Rs3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vbb-O5-LmH"/>
+                            <constraint firstItem="jWe-cu-Rs3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yTT-KZ-egU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="67.633928571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UaS-gL-zCz">
+            <objects>
+                <viewController id="6Hq-3U-KYt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M5b-F8-HDY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="765"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paris" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5R-v9-mie">
+                                <rect key="frame" x="34" y="62" width="82.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="Dgr-TA-dc8">
+                                <rect key="frame" x="20" y="137" width="374" height="212"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="212" id="1ah-rk-26d"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="onA-sM-Jju">
+                                <rect key="frame" x="20" y="386" width="374" height="105"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="jz9-84-zju"/>
+                                </constraints>
+                                <string key="text">France, the largest country in Western Europe, has long been a gateway between the continent's northern and southern regions.Its lengthy borders touch Germany and Belgium in the north the Atlantic Ocean in the west the Pyrenees Mountains and Spain in the south...</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHS-a5-io2">
+                                <rect key="frame" x="149" y="558" width="97.5" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="ISf-jG-mqM"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Learn More"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HHS-a5-io2" firstAttribute="top" secondItem="onA-sM-Jju" secondAttribute="bottom" constant="67" id="3A3-SR-UiJ"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="HHS-a5-io2" secondAttribute="trailing" id="9Qz-df-uhZ"/>
+                            <constraint firstItem="onA-sM-Jju" firstAttribute="trailing" secondItem="M5b-F8-HDY" secondAttribute="trailingMargin" id="D2t-lE-pcz"/>
+                            <constraint firstItem="Dgr-TA-dc8" firstAttribute="top" secondItem="G5R-v9-mie" secondAttribute="bottom" constant="27" id="J73-Xm-Ong"/>
+                            <constraint firstItem="HHS-a5-io2" firstAttribute="leading" secondItem="M5b-F8-HDY" secondAttribute="leadingMargin" constant="129" id="MTl-cn-fIx"/>
+                            <constraint firstItem="G5R-v9-mie" firstAttribute="top" secondItem="M5b-F8-HDY" secondAttribute="topMargin" constant="18" id="OCH-16-5lZ"/>
+                            <constraint firstItem="onA-sM-Jju" firstAttribute="top" secondItem="Dgr-TA-dc8" secondAttribute="bottom" constant="37" id="SC3-Rz-0X8"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="HHS-a5-io2" secondAttribute="bottom" constant="173" id="XEF-uY-ySB"/>
+                            <constraint firstItem="Dgr-TA-dc8" firstAttribute="leading" secondItem="M5b-F8-HDY" secondAttribute="leadingMargin" id="e0U-cg-QwC"/>
+                            <constraint firstItem="onA-sM-Jju" firstAttribute="leading" secondItem="M5b-F8-HDY" secondAttribute="leadingMargin" id="ex8-t1-JnI"/>
+                            <constraint firstItem="G5R-v9-mie" firstAttribute="leading" secondItem="M5b-F8-HDY" secondAttribute="leadingMargin" constant="14" id="fn2-0Y-QOr"/>
+                            <constraint firstItem="Dgr-TA-dc8" firstAttribute="trailing" secondItem="M5b-F8-HDY" secondAttribute="trailingMargin" id="oYo-D4-MZx"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="G5R-v9-mie" secondAttribute="trailing" id="rUU-mQ-KPZ"/>
+                            <constraint firstItem="onA-sM-Jju" firstAttribute="top" secondItem="Dgr-TA-dc8" secondAttribute="bottom" constant="37" id="xSn-QC-80I"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2aG-vU-riS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="834.78260869565224" y="67.96875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="download" width="275" height="183"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
