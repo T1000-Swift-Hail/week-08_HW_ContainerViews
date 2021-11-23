@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ContainerViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RMa-A3-cfo">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <connections>
+                                    <segue destination="TDt-To-6GG" kind="embed" id="rvP-m6-n0g"/>
+                                </connections>
+                            </containerView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="91e-E1-dzB">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="My Dream Contry" id="Oe9-6M-dhf"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RMa-A3-cfo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8DL-RQ-XXe"/>
+                            <constraint firstItem="RMa-A3-cfo" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="BZb-AG-2sW"/>
+                            <constraint firstItem="RMa-A3-cfo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Hcu-Of-TvO"/>
+                            <constraint firstItem="RMa-A3-cfo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gd7-hc-3iZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-199" y="52"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vQ7-gu-iVc">
+            <objects>
+                <viewController id="TDt-To-6GG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uIb-3K-YOb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06W-kD-n46">
+                                <rect key="frame" x="142" y="741" width="130" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="tys-Mh-nf5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Learn More"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="ZaQ-LQ-BIY">
+                                <rect key="frame" x="20" y="185" width="374" height="502"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="12" translatesAutoresizingMaskIntoConstraints="NO" id="lkq-cC-g1I">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="341"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uCI-Ly-clX">
+                                        <rect key="frame" x="0.0" y="385" width="374" height="117"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">Miami, officially the City of Miami, is a coastal metropolis located in Miami-Dade County in southeastern Florida, United States. With a population of 467,963 as of the 2020 census, it is the 44th-largest city in the United States....</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="502" id="1jq-Zu-Vox"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miami, Florida" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVc-8Y-ReW">
+                                <rect key="frame" x="20" y="103" width="148.5" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="eKd-lq-ft8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZaQ-LQ-BIY" firstAttribute="top" secondItem="hVc-8Y-ReW" secondAttribute="bottom" constant="40" id="3XF-Du-mxR"/>
+                            <constraint firstItem="hVc-8Y-ReW" firstAttribute="leading" secondItem="uIb-3K-YOb" secondAttribute="leadingMargin" id="53z-ql-chP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="06W-kD-n46" secondAttribute="trailing" constant="122" id="IKI-5c-EDL"/>
+                            <constraint firstItem="06W-kD-n46" firstAttribute="leading" secondItem="uIb-3K-YOb" secondAttribute="leadingMargin" constant="122" id="LE0-6U-RD8"/>
+                            <constraint firstItem="06W-kD-n46" firstAttribute="top" secondItem="ZaQ-LQ-BIY" secondAttribute="bottom" constant="54" id="flM-HG-SvR"/>
+                            <constraint firstAttribute="trailing" secondItem="ZaQ-LQ-BIY" secondAttribute="trailing" constant="20" id="ipX-zI-Ikt"/>
+                            <constraint firstItem="hVc-8Y-ReW" firstAttribute="top" secondItem="uIb-3K-YOb" secondAttribute="topMargin" constant="59" id="oQT-to-sXX"/>
+                            <constraint firstItem="ZaQ-LQ-BIY" firstAttribute="leading" secondItem="uIb-3K-YOb" secondAttribute="leading" constant="20" id="vKS-IV-kLD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xBP-Cd-sJI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="569.56521739130437" y="51.897321428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="12" width="506" height="341"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
