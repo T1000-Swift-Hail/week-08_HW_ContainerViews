@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ContainerViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQH-zh-wre">
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <connections>
+                                    <segue destination="J4p-PI-F6P" kind="embed" id="5FY-nO-pLL"/>
+                                </connections>
+                            </containerView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8p0-YJ-8ue">
+                                <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Future Cities" id="mrv-Wx-CnU"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lQH-zh-wre" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Yj-y2-KN6"/>
+                            <constraint firstItem="lQH-zh-wre" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Qwp-3D-2mW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lQH-zh-wre" secondAttribute="trailing" id="R19-15-2pE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lQH-zh-wre" secondAttribute="bottom" id="s3a-Yn-E3a"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-352" y="182"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="Axg-hB-Zhe">
+            <objects>
+                <viewController id="J4p-PI-F6P" customClass="SecondVC" customModule="ContainerViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jgd-wo-713">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="848"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Qiddiya" translatesAutoresizingMaskIntoConstraints="NO" id="940-oK-Zo4">
+                                <rect key="frame" x="20" y="158" width="388" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="bCY-6q-veJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qiddiya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNh-wV-pGp">
+                                <rect key="frame" x="40" y="115" width="57.666666666666657" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="zEJ-Uk-Mco"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntA-tn-jLO">
+                                <rect key="frame" x="167.33333333333334" y="658" width="93.666666666666657" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="NTf-qr-FFB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Read More"/>
+                                <connections>
+                                    <action selector="readMoreAction:" destination="J4p-PI-F6P" eventType="touchUpInside" id="C6W-FI-wiL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIg-9h-GtA">
+                                <rect key="frame" x="20" y="426" width="388" height="77"/>
+                                <string key="text">Qiddiya will be a disruptive destination recognized on the world stage as the home of the most innovative and immersive experiences. Our wide range of offerings will be based on five cornerstones: Sports &amp; Wellness; Nature &amp; Environment; Parks &amp; Attractions; Motion &amp; Mobility; and Arts &amp; Culture, making Qiddiya the capital of Entertainment, Sports and the Arts, not just in the Kingdom of Saudi Arabia, but of the world.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lIg-9h-GtA" firstAttribute="top" secondItem="940-oK-Zo4" secondAttribute="bottom" constant="18" id="4LO-3u-54P"/>
+                            <constraint firstItem="940-oK-Zo4" firstAttribute="leading" secondItem="Jgd-wo-713" secondAttribute="leadingMargin" id="6PL-GE-ZoP"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ntA-tn-jLO" secondAttribute="bottom" constant="159" id="JRO-XQ-O2K"/>
+                            <constraint firstItem="mNh-wV-pGp" firstAttribute="top" secondItem="Jgd-wo-713" secondAttribute="topMargin" constant="71" id="LnU-Nf-MLm"/>
+                            <constraint firstItem="lIg-9h-GtA" firstAttribute="leading" secondItem="Jgd-wo-713" secondAttribute="leadingMargin" id="Osk-ED-i47"/>
+                            <constraint firstItem="mNh-wV-pGp" firstAttribute="leading" secondItem="Jgd-wo-713" secondAttribute="leadingMargin" constant="20" id="VQ7-HA-5MV"/>
+                            <constraint firstItem="lIg-9h-GtA" firstAttribute="trailing" secondItem="Jgd-wo-713" secondAttribute="trailingMargin" id="cC0-cO-x2o"/>
+                            <constraint firstItem="ntA-tn-jLO" firstAttribute="centerX" secondItem="Jgd-wo-713" secondAttribute="centerX" id="lGb-7Q-VzJ"/>
+                            <constraint firstItem="940-oK-Zo4" firstAttribute="trailing" secondItem="Jgd-wo-713" secondAttribute="trailingMargin" id="lXl-Mf-stA"/>
+                            <constraint firstItem="940-oK-Zo4" firstAttribute="top" secondItem="mNh-wV-pGp" secondAttribute="bottom" constant="23" id="uYw-wj-Z0g"/>
+                            <constraint firstItem="ntA-tn-jLO" firstAttribute="top" secondItem="lIg-9h-GtA" secondAttribute="bottom" constant="155" id="zWN-HZ-Ovp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="readMoreConstreen" destination="zWN-HZ-Ovp" id="oXc-FX-l5k"/>
+                        <outlet property="textView" destination="lIg-9h-GtA" id="bhB-fN-qhR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ygs-g3-I1s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="550.93457943925227" y="180.77753779697625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Qiddiya" width="1375" height="773"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
