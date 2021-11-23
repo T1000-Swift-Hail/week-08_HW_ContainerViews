@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="week_08_HW_ContainerViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nif-5w-04I">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Future Cities" largeTitleDisplayMode="never" id="Zem-fa-3hJ"/>
+                                </items>
+                            </navigationBar>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQJ-5c-QbT">
+                                <rect key="frame" x="0.0" y="98" width="414" height="764"/>
+                                <connections>
+                                    <segue destination="w4E-KO-JN8" kind="embed" id="2IC-MY-ajD"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nif-5w-04I" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="B2u-xf-BHU"/>
+                            <constraint firstItem="nif-5w-04I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Db9-tZ-ja3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HQJ-5c-QbT" secondAttribute="trailing" id="FMd-j2-S4k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HQJ-5c-QbT" secondAttribute="bottom" id="IvK-G9-fQY"/>
+                            <constraint firstItem="HQJ-5c-QbT" firstAttribute="top" secondItem="nif-5w-04I" secondAttribute="bottom" constant="10" id="Mjj-hC-cyg"/>
+                            <constraint firstItem="nif-5w-04I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PFj-mm-pDI"/>
+                            <constraint firstItem="HQJ-5c-QbT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b4b-hW-76I"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="68"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GMH-P8-DII">
+            <objects>
+                <viewController id="w4E-KO-JN8" customClass="ViewController" customModule="week_08_HW_ContainerViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BaC-WW-kYG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="764"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neom Oxagon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iJ-ig-00d">
+                                <rect key="frame" x="20" y="44" width="208" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="PTM-hM-afE"/>
+                                    <constraint firstAttribute="width" constant="208" id="pbE-Qd-jPr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neom" translatesAutoresizingMaskIntoConstraints="NO" id="kV9-lC-S9b">
+                                <rect key="frame" x="20" y="167" width="374" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="kFf-ZR-I0a"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRA-5F-tsn">
+                                <rect key="frame" x="20" y="432" width="374" height="176"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="176" id="oFN-Yd-zh1"/>
+                                </constraints>
+                                <string key="text">Where the NEOM project extends to include three Arab countries in the northwest of the Kingdom of Saudi Arabia , as it includes lands within the Kingdom of Jordan and the Arab Republic of Egypt. The site of the NEOM project was chosen on the basis that the city would be the center of the whole world, as the project extends over an area estimated at 26,500 square kilometers...</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfV-pU-nNT">
+                                <rect key="frame" x="139" y="645" width="136" height="48"/>
+                                <color key="backgroundColor" red="0.33375437930000001" green="0.55592267760000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="OIs-BU-uJk"/>
+                                    <constraint firstAttribute="width" constant="136" id="qX9-yp-pQ5"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Learn More " cornerStyle="large">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7Jq-mY-Ajq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kV9-lC-S9b" firstAttribute="trailing" secondItem="BaC-WW-kYG" secondAttribute="trailingMargin" id="3ss-UT-3xI"/>
+                            <constraint firstItem="6iJ-ig-00d" firstAttribute="leading" secondItem="BaC-WW-kYG" secondAttribute="leadingMargin" id="7CQ-ER-h7d"/>
+                            <constraint firstItem="wRA-5F-tsn" firstAttribute="centerX" secondItem="DfV-pU-nNT" secondAttribute="centerX" id="8uz-d4-nI9"/>
+                            <constraint firstItem="6iJ-ig-00d" firstAttribute="leading" secondItem="kV9-lC-S9b" secondAttribute="leading" id="9mD-mb-ZO9"/>
+                            <constraint firstItem="DfV-pU-nNT" firstAttribute="top" secondItem="wRA-5F-tsn" secondAttribute="bottom" constant="37" id="MQI-Mp-LlE"/>
+                            <constraint firstItem="kV9-lC-S9b" firstAttribute="leading" secondItem="wRA-5F-tsn" secondAttribute="leading" id="Qsg-tD-rfr"/>
+                            <constraint firstItem="6iJ-ig-00d" firstAttribute="top" secondItem="BaC-WW-kYG" secondAttribute="topMargin" id="V92-6i-SVZ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="DfV-pU-nNT" secondAttribute="bottom" constant="71" id="Xn7-xQ-QVj"/>
+                            <constraint firstItem="wRA-5F-tsn" firstAttribute="top" secondItem="kV9-lC-S9b" secondAttribute="bottom" constant="35" id="jva-MJ-SS2"/>
+                            <constraint firstItem="kV9-lC-S9b" firstAttribute="trailing" secondItem="wRA-5F-tsn" secondAttribute="trailing" id="uR7-j5-z1y"/>
+                            <constraint firstItem="kV9-lC-S9b" firstAttribute="top" secondItem="6iJ-ig-00d" secondAttribute="bottom" constant="49" id="wrv-z4-nLe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imagCatiy" destination="kV9-lC-S9b" id="skT-8X-ZXc"/>
+                        <outlet property="labelText" destination="wRA-5F-tsn" id="2Tz-fm-XC1"/>
+                        <outlet property="learnMore" destination="DfV-pU-nNT" id="AHc-fG-3el"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uzG-1l-wvk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="818.84057971014499" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="neom" width="594" height="429"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
