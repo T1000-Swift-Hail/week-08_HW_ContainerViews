@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyFavoriteCity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gyX-Ib-2Nx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <connections>
+                                    <segue destination="sBA-S9-nGk" kind="embed" id="8V4-rR-Z1Q"/>
+                                </connections>
+                            </containerView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OBn-DQ-CKD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Favorite City" id="wYv-DD-VeI"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gyX-Ib-2Nx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Xb-8I-Lha"/>
+                            <constraint firstItem="gyX-Ib-2Nx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="6WL-pq-zxd"/>
+                            <constraint firstItem="gyX-Ib-2Nx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="N3m-ni-PpX"/>
+                            <constraint firstItem="gyX-Ib-2Nx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dk1-iG-ygg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="66.964285714285708"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="ngI-Md-2Hp">
+            <objects>
+                <viewController id="sBA-S9-nGk" customClass="SecondVC" customModule="MyFavoriteCity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UMu-BH-15X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Riyadh City " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFg-Aa-15C">
+                                <rect key="frame" x="20" y="88" width="374" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IcJ-aM-gZa">
+                                <rect key="frame" x="20" y="141" width="374" height="254"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7J-Et-UQX">
+                                <rect key="frame" x="20" y="426" width="374" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="oge-rm-Xxm"/>
+                                </constraints>
+                                <string key="text">Riyadh The Gardens Najdi pronunciation is the capital of Saudi Arabia and the largest city on the Arabian Peninsula. Located in the center of the an-Nafud desert, on the eastern part of the Najd plateau, the city sits at an average of 600 meters (2,000 ft) above sea level...</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkl-FQ-Kzv">
+                                <rect key="frame" x="147.5" y="579" width="119.5" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="DHH-dt-WI4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Learn more..">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <constraints>
+                            <constraint firstItem="IcJ-aM-gZa" firstAttribute="trailing" secondItem="UMu-BH-15X" secondAttribute="trailingMargin" id="FNl-kR-voG"/>
+                            <constraint firstItem="I7J-Et-UQX" firstAttribute="leading" secondItem="UMu-BH-15X" secondAttribute="leadingMargin" id="KKj-Il-rYv"/>
+                            <constraint firstAttribute="bottom" secondItem="I7J-Et-UQX" secondAttribute="bottom" constant="203" id="R3Z-jy-Gdd"/>
+                            <constraint firstItem="iFg-Aa-15C" firstAttribute="top" secondItem="UMu-BH-15X" secondAttribute="topMargin" constant="44" id="Ygv-n6-fJ5"/>
+                            <constraint firstItem="I7J-Et-UQX" firstAttribute="trailing" secondItem="UMu-BH-15X" secondAttribute="trailingMargin" id="ey8-1U-tHL"/>
+                            <constraint firstItem="I7J-Et-UQX" firstAttribute="top" secondItem="IcJ-aM-gZa" secondAttribute="bottom" constant="31" id="gRR-Sl-bD2"/>
+                            <constraint firstItem="iFg-Aa-15C" firstAttribute="centerX" secondItem="jkl-FQ-Kzv" secondAttribute="centerX" id="gvF-4M-drt"/>
+                            <constraint firstItem="iFg-Aa-15C" firstAttribute="leading" secondItem="UMu-BH-15X" secondAttribute="leadingMargin" id="mze-Yo-xsb"/>
+                            <constraint firstItem="IcJ-aM-gZa" firstAttribute="leading" secondItem="UMu-BH-15X" secondAttribute="leadingMargin" id="oBv-zW-SaG"/>
+                            <constraint firstItem="IcJ-aM-gZa" firstAttribute="top" secondItem="iFg-Aa-15C" secondAttribute="bottom" constant="16" id="r4h-20-JcA"/>
+                            <constraint firstItem="jkl-FQ-Kzv" firstAttribute="top" secondItem="I7J-Et-UQX" secondAttribute="bottom" constant="8" symbolic="YES" id="tjN-Ef-mhX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iFg-Aa-15C" secondAttribute="trailing" id="yBf-ht-DU9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageCity" destination="IcJ-aM-gZa" id="leC-Tr-qln"/>
+                        <outlet property="labelCity" destination="iFg-Aa-15C" id="n1L-B2-sRx"/>
+                        <outlet property="textLabel" destination="I7J-Et-UQX" id="Kic-fS-HmS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GgT-H3-D96" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971.01449275362324" y="66.964285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
