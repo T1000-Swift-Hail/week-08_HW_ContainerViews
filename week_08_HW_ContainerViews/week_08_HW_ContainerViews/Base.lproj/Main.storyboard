@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="week_08_HW_ContainerViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqa-dt-LzK">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Futuer Cities" id="TX6-zR-upC"/>
+                                </items>
+                            </navigationBar>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oU-FD-4P3">
+                                <rect key="frame" x="20" y="88" width="374" height="774"/>
+                                <connections>
+                                    <segue destination="zZ6-sT-Hsd" kind="embed" id="xLN-CD-V0p"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5oU-FD-4P3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IkJ-To-nqK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5oU-FD-4P3" secondAttribute="trailing" constant="20" id="NaV-HS-KH5"/>
+                            <constraint firstItem="5oU-FD-4P3" firstAttribute="top" secondItem="bqa-dt-LzK" secondAttribute="bottom" id="OA8-wl-Wbm"/>
+                            <constraint firstItem="bqa-dt-LzK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Q6A-ua-dW5"/>
+                            <constraint firstItem="bqa-dt-LzK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QRv-fC-gMq"/>
+                            <constraint firstItem="bqa-dt-LzK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Qkn-ye-do8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5oU-FD-4P3" secondAttribute="bottom" id="dpd-jC-kzv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="nJT-d1-XIP">
+            <objects>
+                <viewController id="zZ6-sT-Hsd" customClass="SecondViewController" customModule="week_08_HW_ContainerViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qG8-j9-PxC">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="774"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="53F-WT-CRt">
+                                <rect key="frame" x="16" y="73" width="342" height="628"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neom Oxagon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Esk-jm-Gvz">
+                                        <rect key="frame" x="66" y="0.0" width="210" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="7Sw-XY-Fso"/>
+                                            <constraint firstAttribute="width" constant="210" id="GSf-kO-5gy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J7u-Qk-ubT">
+                                        <rect key="frame" x="0.0" y="80" width="342" height="240"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="342" id="KI6-Nw-mz1"/>
+                                            <constraint firstAttribute="height" constant="240" id="m8q-vc-MIe"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SHo-CN-2Jh">
+                                        <rect key="frame" x="0.0" y="359" width="342" height="182"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="182" id="JFt-uj-LpW"/>
+                                            <constraint firstAttribute="width" constant="342" id="MDW-gO-xwL"/>
+                                        </constraints>
+                                        <string key="text">Futuer cities well be true after a few years,Saudi Arabia enterd the race by starting two cities one in nume district and one in the Cabital Riyadh . the most important aspect about futuer cities is clean energy and tech . which is Saudi Arabia has developing in the last few years so know we dide se the result of that in our envirament wich is make us exsited .</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0Y-cL-qYt">
+                                        <rect key="frame" x="93.5" y="580" width="155" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="5st-m8-aZJ"/>
+                                            <constraint firstAttribute="width" constant="155" id="t2J-Kj-yd5"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Learn More"/>
+                                    </button>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="53F-WT-CRt" firstAttribute="centerX" secondItem="qG8-j9-PxC" secondAttribute="centerX" id="8Pm-fq-Iqx"/>
+                            <constraint firstItem="53F-WT-CRt" firstAttribute="centerY" secondItem="qG8-j9-PxC" secondAttribute="centerY" id="Qww-u5-eVr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Botton" destination="w0Y-cL-qYt" id="s24-MN-XNk"/>
+                        <outlet property="CityImege" destination="J7u-Qk-ubT" id="tGh-cc-XoC"/>
+                        <outlet property="TextField" destination="SHo-CN-2Jh" id="abE-4D-3eL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YYP-3U-pZE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1049" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
